@@ -1,4 +1,4 @@
-from calculadora import soma, mult
+from calculadora import soma, mult,pot
 
 # Calculadora Simples
 
@@ -10,7 +10,8 @@ while True:
     print('1. Soma')
     print('2. Subtração')
     print('3. Multiplicação')
-    print('4. Sair')
+    print('4. Potência')
+    print('5. Sair')
 
     # Escolha do usuário
     op = int(input('\n\t\t\tOpção: '))
@@ -48,8 +49,20 @@ while True:
 
         #Saída
         print(f'\n\n\t{num1} * {num2} = {total}\n')
-
     elif op == 4:
+        print('\n\t\t\t Potêncialização \n')
+
+        # Entrada
+        num1 = int(input('Informe n1: '))
+        num2 = int(input('Informe n2: '))
+
+        # Processamento
+        total = pot(num1, num2)
+
+        # Saída
+        print(f'\n\n\t{num1} ** {num2} = {total}\n')
+
+    elif op == 5:
         # Termina a aplicação
         print('\n\tForte abraço!\n')
         break
