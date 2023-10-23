@@ -1,4 +1,4 @@
-from calculadora import soma
+from calculadora import soma, mult
 
 # Calculadora Simples
 
@@ -9,7 +9,8 @@ while True:
     # Menu
     print('1. Soma')
     print('2. Subtração')
-    print('3. Sair')
+    print('3. Multiplicação')
+    print('4. Sair')
 
     # Escolha do usuário
     op = int(input('\n\t\t\tOpção: '))
@@ -35,8 +36,20 @@ while True:
         #Processamento
 
         #Saída
-
     elif op == 3:
+        print('\n\t\t\t Multiplicação \n')
+
+        #Entrada
+        num1 = int(input('Informe n1: '))
+        num2 = int(input('Informe n2: '))
+
+        #Processamento
+        total = mult(num1, num2)
+
+        #Saída
+        print(f'\n\n\t{num1} * {num2} = {total}\n')
+
+    elif op == 4:
         # Termina a aplicação
         print('\n\tForte abraço!\n')
         break
