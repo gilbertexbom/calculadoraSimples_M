@@ -36,6 +36,7 @@ while True:
         #Entrada
         num1 = int(input('Informe o n1: '))
         num2 = int(input('Informe o n2: '))
+
         #Processamento
         total = sub(num1, num2)
 

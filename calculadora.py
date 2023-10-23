@@ -3,7 +3,7 @@
 def soma(n1, n2):
     return n1 + n2
 
-#subtraçao - stella
+#subtraçao - stella araujo
 def sub(n1, n2):
     return n1 - n2
 
